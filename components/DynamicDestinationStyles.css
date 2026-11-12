@@ -1,0 +1,81 @@
+.dynamic-destination {
+  margin: 4rem 6rem;
+  text-align: center;
+}
+
+.dynamic-destination h1 {
+  font-size: 3rem;
+  color: #222;
+}
+
+.dynamic-destination > p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 1rem 0 3rem;
+}
+
+.dynamic-destination-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.dynamic-destination-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+}
+
+.dynamic-destination-card:hover {
+  transform: translateY(-5px);
+}
+
+.dynamic-destination-card img {
+  width: 45%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.dynamic-destination-info {
+  text-align: left;
+}
+
+.dynamic-destination-info h2 {
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.dynamic-destination-info h3 {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.dynamic-destination-info p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@media screen and (max-width: 850px) {
+  .dynamic-destination {
+    margin: 3rem 2rem;
+  }
+
+  .dynamic-destination-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dynamic-destination-card {
+    flex-direction: column;
+  }
+
+  .dynamic-destination-card img {
+    width: 100%;
+  }
+}
